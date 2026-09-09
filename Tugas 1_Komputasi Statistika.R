@@ -77,41 +77,41 @@ data_barang
 # - Vektor integer
 # - Data frame
 
-data_toko <- list(
+data_toko_online <- list(
   
   # Vektor numerik
-  harga_barang = c(15000, 25000, 35000),
+  harga_produk = c(45000, 75000, 120000),
   
   # Vektor integer
-  jumlah_barang = c(10L, 20L, 30L),
+  jumlah_stok = c(15L, 25L, 35L),
   
   # Data frame
-  data_barang = data.frame(
-    nama_barang = c("Buku", "Pulpen", "Pensil"),
-    harga = c(15000, 5000, 3000),
+  informasi_produk = data.frame(
+    nama_produk = c("Kaos", "Celana", "Jaket"),
+    harga_produk = c(50000, 85000, 150000),
     tersedia = c(TRUE, TRUE, FALSE),
-    terjual = c(TRUE, TRUE, FALSE)
+    terjual = c(TRUE, FALSE, TRUE)
   ),
   
   # List di dalam list
-  data_detail = list(
+  detail_produk = list(
     
     # Vektor numerik
-    harga = c(10000, 20000, 30000),
+    harga = c(25000, 40000, 60000),
     
     # Vektor integer
-    stok = c(10L, 15L, 20L),
+    stok = c(12L, 18L, 24L),
     
     # Data frame
-    barang = data.frame(
-      nama_barang = c("Tas", "Sepatu", "Topi"),
-      harga = c(75000, 150000, 50000),
+    katalog = data.frame(
+      nama_produk = c("Kemeja", "Hoodie", "Topi"),
+      harga = c(90000, 175000, 45000),
       tersedia = c(TRUE, TRUE, FALSE),
-      terjual = c(TRUE, FALSE, TRUE)
+      terjual = c(FALSE, TRUE, TRUE)
     )
   )
 )
 
 
 # Menampilkan seluruh list
-data_toko
+data_toko_online
